@@ -1,0 +1,12 @@
+def solution(A):
+  count = 0
+  for i in range(1,len(A)+2):
+    #it was originally +1 but this did not work and +2 does work
+    count += i
+  full = count
+  count = 0
+  for i in range(len(A)):
+    count += A[i]
+  real = count
+  answer = full - real
+  return answer
