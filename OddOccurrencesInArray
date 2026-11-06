@@ -1,0 +1,10 @@
+Python code
+
+def solution(A):
+    for i in range(len(A)-1):
+        count = 0
+        for j in range (len(A)-1):
+            if A[i] == A[j]:
+                count = count + 1
+        if count % 2 == 1:
+            return A[i]   
