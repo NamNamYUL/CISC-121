@@ -1,0 +1,10 @@
+Python code
+
+def solution(X,Y,D):
+  separation = Y-X
+  value = separation//D
+  if separation%D == 0:
+    return value
+  else:
+    answer = value+1
+    return answer
